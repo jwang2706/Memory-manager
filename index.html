@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulatore RAM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Memoria RAM </h1>
 
+        <div class="stats">
+            <div>Totale: <span id="totalMem">256</span> KB</div>
+            <div>Libera: <span id="freeMem">256</span> KB</div>
+            <div>Usata: <span id="usedMem">0</span> KB</div>
+        </div>
+
+        <div class="controls">
+            <input type="number" id="processSize" placeholder="Dimensione (KB)" min="1" max="256" value="50">
+            <button id="allocateBtn">Alloca</button>
+        </div>
+
+        <div id="canvasContainer"></div>
+        <p class="note">Clicca su un blocco arancione per liberarlo</p>
+
+        <div class="description">
+            <h3> First Fit</h3>
+            <p>Si sceglie il primo blocco libero abbastanza grande. I blocchi verdi sono liberi, quelli arancioni occupati. Cliccando su un blocco occupato lo liberi e unisci gli spazi liberi vicini.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
