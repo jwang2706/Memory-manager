@@ -8,8 +8,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
 </head>
 <body>
+
     <div class="container">
-        <h1>Memoria RAM </h1>
+        <h1>Sezione Grafica: Memoria RAM Simulatore</h1>
 
         <div class="stats">
             <div>Totale: <span id="totalMem">256</span> KB</div>
@@ -26,10 +27,42 @@
         <p class="note">Clicca su un blocco arancione per liberarlo</p>
 
         <div class="description">
-            <h3> First Fit</h3>
-            <p>Si sceglie il primo blocco libero abbastanza grande. I blocchi verdi sono liberi, quelli arancioni occupati. Cliccando su un blocco occupato lo liberi e unisci gli spazi liberi vicini.</p>
+            <h1>Sezione descrizione</h1>
+
+            <h2>Tecnica: Fixed Partition</h2>
+            <p>
+                Fixed Partition Allocation è una tecnica di gestione della memoria in cui la RAM viene divisa all'avvio del sistema
+                in un numero fisso di partizioni. Ogni partizione può contenere un solo processo.
+                Se non ci sono partizioni libere i processi devono attendere.
+            </p>
+
+            <h2>Algoritmo usato: First Fit</h2>
+            <p>
+                Si sceglie il primo blocco libero abbastanza grande.
+                I blocchi verdi sono liberi, quelli arancioni occupati.
+                Cliccando su un blocco occupato lo liberi e unisci gli spazi liberi vicini.
+            </p>
         </div>
+        
+        <div class="dati">
+            <h1>Sezione dati</h1>
+            <p>.</p>
+        </div>
+        
+        <div class="calcoli">
+            <h1>Sezione calcoli</h1>
+            <p>.</p>
+        </div>
+        
+        <div class="disegno">
+            <h1>Sezione disegno schematico pre-codice</h1>
+            <img src="" alt="Schema Interfaccia del Simulatore Memoria RAM" width="300">
+        </div>
+        
+
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
