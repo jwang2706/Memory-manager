@@ -16,7 +16,7 @@ body {
     box-shadow: 0 0 10px black;
 }
 h1 {
-    color: #ffa500;
+    color: #ffffff;
     text-align: center;
 }
 .stats {
@@ -80,7 +80,32 @@ canvas {
     border-radius: 8px;
     margin-top: 20px;
 }
-.description h3 {
+.description h2 {
     color: #ffa500;
     margin-top: 0;
 }
+
+.dati {
+    background: #4a4a4a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.dati h2 {
+    color: #ffa500;
+    margin-top: 0;
+}
+
+.calcoli {
+    background: #4a4a4a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.disegno {
+    background: #4a4a4a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
